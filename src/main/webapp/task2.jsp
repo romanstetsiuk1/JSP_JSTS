@@ -15,7 +15,7 @@
 <body>
 
 <c:forEach var="stringFromList" items="${task2List}">
-    <c:if test="${fn:length(stringFromList) > 4}">
+    <c:if test="${fn:length(stringFromList) >= 4}">
         ${stringFromList}<br>
     </c:if>
 </c:forEach>
